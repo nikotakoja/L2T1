@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Ikätarkistus</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+ <div th:if="${age} &gt; 18">
+ 
+ <p th:text="'Tervetuloa ' + ${name} + '!'" />
+ 
+ </div>
+ 
+ <div th:if="${age} &lt; 18">
+ 
+ <p th:text="'Olet liian nuori'" />
+ 
+ </div>
+ 
+</body>
+</html>
